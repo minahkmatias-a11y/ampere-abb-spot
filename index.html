@@ -281,8 +281,11 @@ section + section{ border-top:1px solid var(--line); }
 /* ---------- REFERENCIA THUMB + LINK ---------- */
 .ref-thumb{
   position:relative; aspect-ratio:16/9; border-radius:3px; overflow:hidden;
-  display:flex; align-items:flex-end;
+  display:flex; align-items:flex-end; cursor:pointer; text-decoration:none;
+  transition:transform 0.15s ease;
 }
+.ref-thumb:hover{ transform:scale(1.015); }
+.ref-thumb:hover .play{ background:#ffffff26; border-color:#ffffff88; }
 .ref-thumb.ypf{ background:
     radial-gradient(circle at 75% 20%, #ffd58a55, transparent 55%),
     linear-gradient(150deg,#5b3a12,#2a1c0c 70%); }
@@ -394,7 +397,7 @@ table.scene-table td .dwho.fede{ color:#8fb8d8; }
     <div class="ref-grid">
       <div class="ref-card">
         <span class="tag">Referencia &mdash; estructura</span>
-        <div class="ref-thumb ypf"><span class="play">&#9654;</span><span class="thumb-cap">YPF &middot; Verano &middot; dos personajes</span></div>
+        <a class="ref-thumb ypf" href="https://www.youtube.com/watch?v=IPEBtugA9X4" target="_blank" rel="noopener" aria-label="Ver comercial original de YPF"><span class="play">&#9654;</span><span class="thumb-cap">YPF &middot; Verano &middot; dos personajes</span></a>
         <h3>YPF &mdash; &ldquo;Sab&eacute;s que estamos&rdquo;</h3>
         <p>Con Juana Viale y un playero. De ac&aacute; tomamos el molde estructural: gui&oacute;n en dos tiempos &mdash; primero el v&iacute;nculo y la picard&iacute;a entre los dos personajes, despu&eacute;s la informaci&oacute;n funcional montada encima.</p>
         <div class="take"><b>Qu&eacute; tomamos</b>Toda la estructura en dos tiempos del spot.</div>
@@ -402,7 +405,7 @@ table.scene-table td .dwho.fede{ color:#8fb8d8; }
       </div>
       <div class="ref-card">
         <span class="tag">Referencia &mdash; contraste</span>
-        <div class="ref-thumb merth"><span class="play">&#9654;</span><span class="thumb-cap">Merthiolate &middot; 1987 &middot; placa de producto</span></div>
+        <a class="ref-thumb merth" href="https://www.instagram.com/reels/DO7AOG3iYbI/" target="_blank" rel="noopener" aria-label="Ver comercial original de Merthiolate"><span class="play">&#9654;</span><span class="thumb-cap">Merthiolate &middot; 1987 &middot; placa de producto</span></a>
         <h3>Merthiolate &mdash; &ldquo;Gladiadores&rdquo; (1987)</h3>
         <p>&ldquo;&iquest;Ten&eacute;s Merthiolate?&rdquo; &mdash; &ldquo;S&iacute;, de todas las variedades&rdquo;. La data del producto viaja expl&iacute;cita en el di&aacute;logo mismo, de forma muy evidente, y el espectador compra con gusto.</p>
         <div class="take"><b>Qu&eacute; ajustamos</b>Misma l&oacute;gica, sin la exageraci&oacute;n total: el humor se filtra en un tono m&aacute;s cotidiano.</div>
